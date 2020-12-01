@@ -1,23 +1,29 @@
 #!/usr/bin/env python3
 
-from sys import exit
-from sys import stdin
+import sys
 
-def main():
-	leest = []
-#	with open("input", 'r') as f:
-#		for line in f:
-#			leest.append(int(line.zfill(5)))
+def part_one(nums):
+	for i in nums:
+		for j in nums:
+			if i + j == 2020:
+				return i * j
 
-	for line in stdin:
-		leest.append(int(line.zfill(5)))
-	leest.sort()
-
-	for i in leest:
-		for j in leest:
-			for k in leest:
+def part_two(nums):
+	for i in nums:
+		for j in nums:
+			for k in nums:
 				if i + j + k == 2020:
 					return i * j * k
-		
+
+def main():
+	input = []
+	for line in sys.stdin:
+		input.append(int(line.zfill(5)))
+
+	input.sort()
+	
+	print(part_one(input))
+	print(part_two(input))
+
 if __name__ == "__main__":
-	exit(print(main()))
+	sys.exit(main())
