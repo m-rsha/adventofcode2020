@@ -28,11 +28,6 @@ int partTwo(const std::vector<int>& v, const int& findMe) {
 
 int main(int argc, char** argv) {
 
-//	if (argc == 1) {
-//		std::cout << "Usage: " << argv[0] << " [input]\n";
-//		return 0;
-//	}
-
 	std::vector<int> v;
 	v.reserve(200);
 	std::string s;
