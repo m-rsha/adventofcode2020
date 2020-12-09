@@ -1,8 +1,2 @@
 # Vim swapfiles
 *.swp
-
-# Our AoC 2020 input
-input
-
-# Binaries
-day*/t

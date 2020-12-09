@@ -3,7 +3,7 @@
 import sys
 
 def part_one(nums):
-	for i in nums:
+        for i in nums:
 		for j in nums:
 			if i + j == 2020:
 				return i * j
